@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Budget Detail{% endblock %}
+{% block content %}
+<h1 class="mb-4">{{ budget.name }}</h1>
+<div class="card">
+    <div class="card-header">
+        Details
+    </div>
+    <div class="card-body">
+        <p class="card-text">Amount: ${{ budget.amount }}</p>
+        <p class="card-text">Description: {{ budget.description }}</p>
+        <p class="card-text">Category: {{ budget.category.name }}</p>
+        <a href="{% url 'budget_update' budget.pk %}" class="btn btn-warning">Edit</a>
+        <a href="{% url 'budget_list' %}" class="btn btn-secondary">Back to list</a>
+    </div>
+</div>
+{% endblock %}

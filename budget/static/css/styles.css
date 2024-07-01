@@ -1,0 +1,17 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container {
+    max-width: 960px;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.card-header {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+.card {
+    margin-bottom: 20px;
+}
